@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+.Signupbgimage {
+    height: 100%;
+    width: 100%;
+    background-image: url("./Signupbgimg.svg");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center; /* Center items vertically */
+}
+
+.formcss {
+    padding-right: 5%; /* Add padding from the right */
+    width: 100%;
+    max-width: 600px; /* Set a maximum width for larger screens */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+h2 {
+    color: #00ADD2;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+    width: 100%; /* Full width */
+    height: 50px;
+    background-color: #EFEFF0;
+    border-left: #00ADD2 5px solid;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    margin-bottom: 10px; /* Space between inputs */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+input[type=submit] {
+    color: white;
+    width: 100%; /* Full width */
+    height: 60px; /* Increase height */
+    background-color: #00ADD2;
+    border-radius: 56px;
+    border-color: transparent;
+    cursor: pointer; /* Show pointer cursor on hover */
+    font-size: 18px; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+input[type=submit]:hover {
+    background-color: #008C9E; /* Darker shade for hover effect */
+    transform: scale(1.05); /* Slightly enlarge button */
+}
+
+.p_signup {
+    color: #00ADD2;
+    font-size: 16px; /* Increase font size for the link */
+}
+
+.rubik {
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    background-color: #21e1fa;
+    border-radius: 56px;
+    border-color: transparent;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .formcss {
+        padding-right: 5%;
+        width: 90%;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=password],
+    input[type=submit] {
+        width: 100%;
+        max-width: none; /* Remove max-width on smaller screens */
+    }
+
+    input[type=submit] {
+        height: 50px; /* Adjust button height on smaller screens */
+        font-size: 16px; /* Adjust font size on smaller screens */
+    }
+}
